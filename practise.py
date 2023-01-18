@@ -38,7 +38,8 @@ class Manager(Employee):
         super().__init__(fname, lname, pay)
         if emp:
             self.emps = []
-        self.emps = [emp]
+        else:
+            self.emps = [emp]
 
     def add_emp(self, emp):
         if emp not in self.emps:
